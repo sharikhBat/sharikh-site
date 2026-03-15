@@ -31,7 +31,7 @@ const projects: Project[] = [
     description:
       "Applying epistemology to how we live. An AI app that helps you find clarity through structured self-reflection.",
     status: "building",
-    link: "#",
+    link: "https://stillness-drab.vercel.app/",
     colSpan: "md:col-span-5",
     accent: "#c9ff3b",
   },
