@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: "Stylenist",
     tag: "AI + Fashion",
     description:
-      "Applying epistemology to personal styling. An AI app that doesn't just recommend — it understands why you wear what you wear.",
+      "AI styling that understands why you wear what you wear. Epistemology meets personal fashion.",
     status: "building",
     link: "#",
     colSpan: "md:col-span-7",
@@ -27,9 +27,9 @@ const projects: Project[] = [
   },
   {
     title: "SMI",
-    tag: "SaaS Platform",
+    tag: "E-Commerce Intelligence",
     description:
-      "Sell My Product Intelligence — marketplace analytics and review intelligence for brands scaling on e-commerce platforms.",
+      "Marketplace analytics and review intelligence. Brands use it to decode what customers actually want.",
     status: "building",
     link: "#",
     colSpan: "md:col-span-5",
@@ -39,7 +39,7 @@ const projects: Project[] = [
     title: "Speak2",
     tag: "Senior Living",
     description:
-      "Voice-first communication platform for senior living facilities. Connecting residents, families, and staff through conversational AI.",
+      "Voice-first platform connecting residents, families, and staff in senior living facilities.",
     status: "shipped",
     link: "#",
     colSpan: "md:col-span-5",
@@ -47,9 +47,9 @@ const projects: Project[] = [
   },
   {
     title: "Embers",
-    tag: "Inspire",
+    tag: "Creative Tools",
     description:
-      "A platform built to spark and sustain creative momentum. Turning fleeting inspiration into actionable creative work.",
+      "Turns fleeting inspiration into action. A platform that sparks and sustains creative momentum.",
     status: "shipped",
     link: "#",
     colSpan: "md:col-span-7",
@@ -74,7 +74,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       }}
       className={`${project.colSpan} group relative block`}
     >
-      <div className="relative overflow-hidden rounded-2xl border border-border bg-surface p-8 md:p-10 h-full min-h-[280px] flex flex-col justify-between hover:border-[#333] transition-all duration-500">
+      <div className="relative overflow-hidden rounded-2xl border border-border bg-surface p-6 md:p-10 h-full min-h-[240px] md:min-h-[280px] flex flex-col justify-between hover:border-[#333] transition-all duration-500">
         {/* Accent glow */}
         <div
           className="absolute top-0 right-0 w-64 h-64 rounded-full blur-[120px] opacity-0 group-hover:opacity-10 transition-opacity duration-700"
@@ -82,8 +82,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         />
 
         <div>
-          <div className="flex items-center justify-between mb-6">
-            <span className="text-xs font-mono text-muted tracking-widest uppercase">
+          <div className="flex items-center justify-between mb-4 md:mb-6">
+            <span className="text-[10px] md:text-xs font-mono text-muted tracking-widest uppercase">
               {project.tag}
             </span>
             <span
@@ -99,7 +99,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             </span>
           </div>
 
-          <h3 className="font-serif text-3xl md:text-4xl font-bold mb-4 group-hover:text-accent transition-colors duration-300">
+          <h3 className="font-serif text-2xl md:text-4xl font-bold mb-3 md:mb-4 group-hover:text-accent transition-colors duration-300">
             {project.title}
           </h3>
 
@@ -109,8 +109,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         </div>
 
         {/* Arrow */}
-        <div className="flex justify-end mt-6">
-          <div className="w-10 h-10 rounded-full border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent transition-all duration-300">
+        <div className="flex justify-end mt-4 md:mt-6">
+          <div className="w-9 h-9 md:w-10 md:h-10 rounded-full border border-border flex items-center justify-center group-hover:border-accent group-hover:bg-accent transition-all duration-300">
             <svg
               width="14"
               height="14"
@@ -133,14 +133,14 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
 export function Work() {
   return (
-    <section id="work" className="px-6 md:px-12 lg:px-24 py-24 md:py-32">
-      <AnimatedSection className="mb-16">
+    <section id="work" className="px-6 md:px-12 lg:px-24 py-16 md:py-32">
+      <AnimatedSection className="mb-10 md:mb-16">
         <div className="flex items-end justify-between">
           <div>
-            <span className="text-xs font-mono text-accent tracking-widest uppercase mb-4 block">
+            <span className="text-xs font-mono text-accent tracking-widest uppercase mb-3 md:mb-4 block">
               Selected Work
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold">
+            <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl font-bold">
               Things I&apos;ve
               <br />
               <span className="italic text-muted">built</span>
