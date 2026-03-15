@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import { SharkLogo } from "./SharkLogo";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
@@ -16,9 +17,9 @@ export function Nav() {
       >
         <a
           href="#"
-          className="font-serif text-lg tracking-tight text-foreground hover:text-accent transition-colors"
+          className="text-foreground hover:text-accent transition-colors"
         >
-          SA.
+          <SharkLogo />
         </a>
 
         {/* Desktop nav */}
