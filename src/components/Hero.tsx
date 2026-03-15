@@ -134,14 +134,14 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Mobile: image below content */}
+      {/* Mobile: image below content — full bleed with gradient blend */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.95 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="md:hidden px-6 mt-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="md:hidden relative w-full mt-6 -mb-8"
       >
-        <div className="relative aspect-[3/2] rounded-2xl overflow-hidden border border-border">
+        <div className="relative aspect-[4/3] overflow-hidden">
           <Image
             src="/sharikh.jpg"
             alt="Sharikh Ahmed at a whiteboard"
@@ -150,7 +150,9 @@ export function Hero() {
             className="object-cover object-center"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+          {/* Blend edges into background */}
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-background/60" />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/50 via-transparent to-background/50" />
         </div>
       </motion.div>
 
