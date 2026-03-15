@@ -35,20 +35,6 @@ export function Story() {
           </h2>
         </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mb-16 md:mb-20">
-          <AnimatedSection delay={0.1}>
-            <p className="text-muted text-base md:text-lg leading-relaxed">
-              I skipped the traditional path. Got deeply interested in tech, taught myself to code, then went out and sold. Door-to-door. Cold emails. Whatever it took to get in front of people.
-            </p>
-          </AnimatedSection>
-
-          <AnimatedSection delay={0.2}>
-            <p className="text-muted text-base md:text-lg leading-relaxed">
-              Got lucky too — met people who looked at my skills, not my degree. That taught me something no classroom could: you learn fastest when you&apos;re playing on the field, not reading about it.
-            </p>
-          </AnimatedSection>
-        </div>
-
         {/* Timeline - mobile: simple stacked, desktop: alternating */}
         <div className="relative">
           {/* Center line - desktop only */}

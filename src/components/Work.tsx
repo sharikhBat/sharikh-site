@@ -16,10 +16,10 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Stylenist",
-    tag: "AI + Fashion",
+    title: "Stillness",
+    tag: "AI + Wellbeing",
     description:
-      "AI styling that understands why you wear what you wear. Epistemology meets personal fashion.",
+      "Applying epistemology to how we live. An AI app that helps you find clarity through structured self-reflection.",
     status: "building",
     link: "#",
     colSpan: "md:col-span-7",

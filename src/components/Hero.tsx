@@ -5,9 +5,28 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="min-h-[85vh] md:min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-24">
-      <div className="max-w-6xl w-full flex flex-col md:flex-row md:items-center md:justify-between gap-12 md:gap-16">
-        <div className="flex-1">
+    <section className="min-h-[85vh] md:min-h-screen flex flex-col justify-center relative overflow-hidden">
+      {/* Desktop: image absolute right, full height */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+        className="hidden md:block absolute top-0 right-0 w-[45%] lg:w-[40%] h-full"
+      >
+        <Image
+          src="/sharikh.jpg"
+          alt="Sharikh Ahmed at a whiteboard"
+          fill
+          sizes="45vw"
+          className="object-cover object-center"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-background/30" />
+      </motion.div>
+
+      <div className="relative z-10 px-6 md:px-12 lg:px-24 pt-24">
+        <div className="max-w-xl lg:max-w-2xl">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -41,8 +60,8 @@ export function Hero() {
             }}
             className="text-base md:text-xl text-muted max-w-xl leading-relaxed mb-4 md:mb-6"
           >
-            Started building at 16. Skipped college. Went straight to market. I
-            turn deep domain expertise into real AI products.
+            Started building at 16. Skipped college. Went straight to market.
+            Passionate about solving real problems with tech.
           </motion.p>
 
           {/* Upwork badge */}
@@ -113,34 +132,34 @@ export function Hero() {
             </a>
           </motion.div>
         </div>
-
-        {/* Profile image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="flex-shrink-0 w-full md:w-[380px] lg:w-[440px]"
-        >
-          <div className="relative aspect-[3/2] md:aspect-[4/5] rounded-2xl overflow-hidden border border-border">
-            <Image
-              src="/sharikh.jpg"
-              alt="Sharikh Ahmed at a whiteboard"
-              fill
-              sizes="(max-width: 768px) 100vw, 440px"
-              className="object-cover object-center"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
-          </div>
-        </motion.div>
       </div>
+
+      {/* Mobile: image below content */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        className="md:hidden px-6 mt-8"
+      >
+        <div className="relative aspect-[3/2] rounded-2xl overflow-hidden border border-border">
+          <Image
+            src="/sharikh.jpg"
+            alt="Sharikh Ahmed at a whiteboard"
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
+        </div>
+      </motion.div>
 
       {/* Scroll indicator — desktop only */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 1.5 }}
-        className="hidden md:flex absolute bottom-12 left-6 md:left-12 items-center gap-3"
+        className="hidden md:flex absolute bottom-12 left-6 md:left-12 items-center gap-3 z-10"
       >
         <div className="w-[1px] h-12 bg-border overflow-hidden">
           <motion.div
