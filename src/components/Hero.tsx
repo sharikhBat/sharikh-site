@@ -35,7 +35,7 @@ export function Hero() {
           >
             <div className="w-2 h-2 rounded-full bg-accent animate-pulse" />
             <span className="text-xs md:text-sm font-mono text-muted tracking-widest uppercase">
-              Builder &middot; Maker &middot; Learner
+              Learner &middot; Builder &middot; Explorer
             </span>
           </motion.div>
 

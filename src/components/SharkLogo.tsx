@@ -3,28 +3,39 @@
 export function SharkLogo({ className = "" }: { className?: string }) {
   return (
     <svg
-      width="34"
-      height="28"
-      viewBox="0 0 34 28"
+      width="32"
+      height="32"
+      viewBox="0 0 64 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      {/* Shark silhouette — side profile, sleek and minimal */}
-      {/* Body */}
+      {/* Clean shark silhouette facing right */}
       <path
-        d="M2 16C2 16 5 12 10 11L18 4L16 12L28 10C28 10 32 12 32 15C32 18 28 19 28 19L8 20C8 20 2 20 2 16Z"
+        d="
+          M58 34
+          Q54 30 46 28
+          L40 27
+          L36 10
+          Q35 26 34 27
+          L20 26
+          Q12 26 6 30
+          L2 34
+          Q6 32 10 32
+          L6 38
+          Q8 34 12 33
+          L26 33
+          L30 42
+          Q31 34 32 33
+          L48 33
+          Q54 33 58 36
+          Z
+        "
         fill="currentColor"
-      />
-      {/* Tail */}
-      <path
-        d="M2 16L0 12M2 16L0 20"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
+        fillRule="evenodd"
       />
       {/* Eye */}
-      <circle cx="25" cy="14.5" r="1.2" fill="var(--color-background)" />
+      <circle cx="50" cy="31.5" r="2" fill="var(--color-background)" />
     </svg>
   );
 }
