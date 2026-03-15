@@ -46,10 +46,10 @@ export function Contact() {
               </svg>
             </a>
             <a
-              href="mailto:hello@sharikh.com"
+              href="mailto:sharikhahmed30@gmail.com"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 border border-border text-foreground rounded-full text-sm hover:border-muted transition-colors"
             >
-              hello@sharikh.com
+              sharikhahmed30@gmail.com
             </a>
           </div>
         </AnimatedSection>
