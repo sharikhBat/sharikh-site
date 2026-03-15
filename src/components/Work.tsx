@@ -16,13 +16,23 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Rememless",
+    tag: "Productivity",
+    description:
+      "Understand where your time went — without timers. Conversational check-ins turned into visual time maps by AI.",
+    status: "building",
+    link: "https://www.rememless.com/",
+    colSpan: "md:col-span-7",
+    accent: "#38bdf8",
+  },
+  {
     title: "Stillness",
     tag: "AI + Wellbeing",
     description:
       "Applying epistemology to how we live. An AI app that helps you find clarity through structured self-reflection.",
     status: "building",
     link: "#",
-    colSpan: "md:col-span-7",
+    colSpan: "md:col-span-5",
     accent: "#c9ff3b",
   },
   {
@@ -42,7 +52,7 @@ const projects: Project[] = [
       "Alexa-based voice platform deployed in senior living facilities. Connecting residents, families, and staff.",
     status: "shipped",
     link: "https://www.speak2family.com/",
-    colSpan: "md:col-span-5",
+    colSpan: "md:col-span-7",
     accent: "#ff6b3b",
   },
   {
@@ -52,18 +62,8 @@ const projects: Project[] = [
       "Internal reimbursement tool that cuts the pain out of expense management for teams.",
     status: "shipped",
     link: "https://app.imbur.se/",
-    colSpan: "md:col-span-7",
-    accent: "#a855f7",
-  },
-  {
-    title: "Rememless",
-    tag: "Productivity",
-    description:
-      "Understand where your time went — without timers. Conversational check-ins turned into visual time maps by AI.",
-    status: "building",
-    link: "https://www.rememless.com/",
     colSpan: "md:col-span-12",
-    accent: "#38bdf8",
+    accent: "#a855f7",
   },
 ];
 
