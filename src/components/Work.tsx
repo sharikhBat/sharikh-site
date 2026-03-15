@@ -55,6 +55,16 @@ const projects: Project[] = [
     colSpan: "md:col-span-7",
     accent: "#a855f7",
   },
+  {
+    title: "Rememless",
+    tag: "Productivity",
+    description:
+      "Understand where your time went — without timers. Conversational check-ins turned into visual time maps by AI.",
+    status: "building",
+    link: "https://www.rememless.com/",
+    colSpan: "md:col-span-12",
+    accent: "#38bdf8",
+  },
 ];
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -149,7 +159,7 @@ export function Work() {
             </h2>
           </div>
           <span className="hidden md:block text-6xl font-serif text-border">
-            04
+            05
           </span>
         </div>
       </AnimatedSection>
