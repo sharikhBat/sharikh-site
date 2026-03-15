@@ -123,12 +123,12 @@ export function Hero() {
               </svg>
             </a>
             <a
-              href="https://calendly.com/sharikhahmed"
+              href="https://wa.me/917019553411?text=Hey%20Sharikh!"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-border text-foreground rounded-full text-sm hover:border-muted transition-colors"
             >
-              Book a call
+              Message me
             </a>
           </motion.div>
         </div>
