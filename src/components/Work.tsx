@@ -27,11 +27,11 @@ const projects: Project[] = [
   },
   {
     title: "SMI",
-    tag: "E-Commerce Intelligence",
+    tag: "Marketplace",
     description:
-      "Marketplace analytics and review intelligence. Brands use it to decode what customers actually want.",
-    status: "building",
-    link: "#",
+      "Somebody Make It — connecting people who want things made with makers who build them.",
+    status: "live",
+    link: "https://somebodymakeit.com/",
     colSpan: "md:col-span-5",
     accent: "#3b8fff",
   },
@@ -39,21 +39,21 @@ const projects: Project[] = [
     title: "Speak2",
     tag: "Senior Living",
     description:
-      "Voice-first platform connecting residents, families, and staff in senior living facilities.",
+      "Alexa-based voice platform deployed in senior living facilities. Connecting residents, families, and staff.",
     status: "shipped",
-    link: "#",
+    link: "https://www.speak2family.com/",
     colSpan: "md:col-span-5",
     accent: "#ff6b3b",
   },
   {
-    title: "Embers",
-    tag: "Creative Tools",
+    title: "Imburse",
+    tag: "FinTech",
     description:
-      "Turns fleeting inspiration into action. A platform that sparks and sustains creative momentum.",
+      "Internal reimbursement tool that cuts the pain out of expense management for teams.",
     status: "shipped",
-    link: "#",
+    link: "https://app.imbur.se/",
     colSpan: "md:col-span-7",
-    accent: "#ff3b8f",
+    accent: "#a855f7",
   },
 ];
 
@@ -65,6 +65,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
     <motion.a
       ref={ref}
       href={project.link}
+      target={project.link !== "#" ? "_blank" : undefined}
+      rel={project.link !== "#" ? "noopener noreferrer" : undefined}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{

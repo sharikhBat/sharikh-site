@@ -3,9 +3,21 @@
 import { AnimatedSection, AnimatedText } from "./AnimatedSection";
 
 const milestones = [
-  { age: "16", label: "Landed my first clients. No degree, no connections. Cold outreach and grit." },
-  { age: "17", label: "First real job. Learned more in 6 months than most learn in 4 years of school." },
-  { age: "Now", label: "Building startups. Shipping products. Turning market expertise into tech." },
+  {
+    age: "16",
+    label:
+      "Got obsessed with tech. Taught myself to build websites. Went door-to-door, cold emailed, sold hard. Landed my first clients.",
+  },
+  {
+    age: "17",
+    label:
+      "Wanted to learn faster. Applied everywhere — same hustle, same selling mode. Landed my first job. Naive, but always playing on the field where real lessons happen.",
+  },
+  {
+    age: "21",
+    label:
+      "Four years in. Built real products, shipped real code, worked with real users. Now building startups and creating products of my own.",
+  },
 ];
 
 export function Story() {
@@ -26,13 +38,13 @@ export function Story() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 mb-16 md:mb-20">
           <AnimatedSection delay={0.1}>
             <p className="text-muted text-base md:text-lg leading-relaxed">
-              While others sat in lecture halls, I was in the market. Building. Selling. Learning from real customers with real problems.
+              I skipped the traditional path. Got deeply interested in tech, taught myself to code, then went out and sold. Door-to-door. Cold emails. Whatever it took to get in front of people.
             </p>
           </AnimatedSection>
 
           <AnimatedSection delay={0.2}>
             <p className="text-muted text-base md:text-lg leading-relaxed">
-              That taught me something no curriculum could: how to spot what actually needs building. Not what&apos;s theoretically interesting — what people pay for.
+              Got lucky too — met people who looked at my skills, not my degree. That taught me something no classroom could: you learn fastest when you&apos;re playing on the field, not reading about it.
             </p>
           </AnimatedSection>
         </div>
@@ -73,7 +85,9 @@ export function Story() {
                   i % 2 === 0 ? "flex-row" : "flex-row-reverse"
                 }`}
               >
-                <div className={`flex-1 ${i % 2 === 0 ? "text-right pr-16" : "pl-16"}`}>
+                <div
+                  className={`flex-1 ${i % 2 === 0 ? "text-right pr-16" : "pl-16"}`}
+                >
                   <AnimatedText delay={i * 0.15 + 0.1}>
                     <span className="font-serif text-5xl md:text-6xl font-bold text-accent">
                       {milestone.age}
@@ -84,7 +98,9 @@ export function Story() {
                 {/* Dot on center line */}
                 <div className="absolute left-1/2 -translate-x-1/2 top-4 w-3 h-3 rounded-full bg-accent border-4 border-background z-10" />
 
-                <div className={`flex-1 ${i % 2 === 0 ? "pl-16" : "text-right pr-16"}`}>
+                <div
+                  className={`flex-1 ${i % 2 === 0 ? "pl-16" : "text-right pr-16"}`}
+                >
                   <p className="text-muted text-lg leading-relaxed">
                     {milestone.label}
                   </p>

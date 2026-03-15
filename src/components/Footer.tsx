@@ -10,22 +10,28 @@ export function Footer() {
 
         <div className="flex items-center gap-6">
           <a
-            href="#"
+            href="https://github.com/sharikhBat"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
-            Twitter / X
+            GitHub
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/sharikhahmed/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
             LinkedIn
           </a>
           <a
-            href="#"
+            href="https://www.upwork.com/freelancers/~01bb556a1c4505523e?viewMode=1"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
-            GitHub
+            Upwork
           </a>
         </div>
       </div>

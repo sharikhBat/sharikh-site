@@ -25,7 +25,9 @@ export function Contact() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4">
             <a
-              href="#"
+              href="https://calendly.com/sharikhahmed"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-background rounded-full text-sm font-medium hover:bg-accent/90 transition-colors"
             >
               Book a call
