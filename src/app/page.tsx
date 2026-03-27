@@ -4,7 +4,7 @@ import { Marquee } from "@/components/Marquee";
 import { Work } from "@/components/Work";
 import { Story } from "@/components/Story";
 import { Focus } from "@/components/Focus";
-import { Contact } from "@/components/Contact";
+// import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Work />
       <Story />
       <Focus />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </main>
   );

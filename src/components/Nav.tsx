@@ -36,7 +36,7 @@ export function Nav() {
           >
             Story
           </a>
-          <a
+          {/* <a
             href="#contact"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
@@ -47,7 +47,7 @@ export function Nav() {
             className="text-sm px-4 py-2 bg-accent text-background rounded-full font-medium hover:bg-accent/90 transition-colors"
           >
             Let&apos;s talk
-          </a>
+          </a> */}
         </div>
 
         {/* Mobile hamburger */}
@@ -84,7 +84,6 @@ export function Nav() {
             {[
               { href: "#work", label: "Work" },
               { href: "#story", label: "Story" },
-              { href: "#contact", label: "Contact" },
             ].map((link, i) => (
               <motion.a
                 key={link.href}
@@ -98,7 +97,7 @@ export function Nav() {
                 {link.label}
               </motion.a>
             ))}
-            <motion.a
+            {/* <motion.a
               href="#contact"
               onClick={() => setOpen(false)}
               initial={{ opacity: 0, y: 20 }}
@@ -107,7 +106,7 @@ export function Nav() {
               className="mt-4 px-8 py-3 bg-accent text-background rounded-full font-medium text-sm"
             >
               Let&apos;s talk
-            </motion.a>
+            </motion.a> */}
           </motion.div>
         )}
       </AnimatePresence>
